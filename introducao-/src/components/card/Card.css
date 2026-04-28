@@ -1,0 +1,5 @@
+.Card-aluno{
+    background-color: rgb(221, 132, 132);
+   justify-content: center;
+    display: flex;
+}
