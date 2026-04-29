@@ -1,16 +1,21 @@
 import './Card.css'
-function Card(){
-    const nomeAluno = "David Carlos dos santos de jesus"
-    const cursoAluno = "TDS02"
-    const ativo = true;
-    
-    
+
+interface CardProps{
+    nomeAluno: string; //obrigatório, texto
+    cursoAluno: string; //obrigatório
+    statusAluno?: boolean; //opcional
+}
+
+
+
+function Card({nomeAluno,cursoAluno,statusAluno = true}: CardProps){
+ 
     return( 
     <div className="Card-aluno">
         
         <h2>{nomeAluno}</h2>
         <p>{cursoAluno}</p>
-        <p>Status aluno: {true ? "✅" : "⛔" }</p>
+        <p>Status aluno: {statusAluno ? "✅" : "⛔" }</p>
     </div>
     );
 }

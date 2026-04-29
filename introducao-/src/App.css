@@ -4,3 +4,9 @@ h1{
 h2{
   color: green;
 }
+.componentes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
